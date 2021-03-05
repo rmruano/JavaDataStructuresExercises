@@ -14,7 +14,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
-                    <finalName>DataStructuresExercises</finalName>
+                    <finalName>DataStructuresExercises-${project.version}-FULL</finalName>
                     <archive>
                         <manifest>
                             <!--<mainClass>com.rubenmoraleda.data_structures_exercises.LRUCache</mainClass>-->
