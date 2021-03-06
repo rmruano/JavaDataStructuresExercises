@@ -14,6 +14,13 @@ public class DuplicatesRemoverTest extends TestCase {
         _duplicatesRemover = new DuplicatesRemover();
     }
 
+    public void testProcessTiny() {
+        int[] array = new int[]{1,1};
+        int length = _duplicatesRemover.process(array);
+        assertEquals(1, length);
+        assertEquals("[1, 1]", Arrays.toString(array));
+    }
+
     public void testProcessSmall() {
         int[] array = new int[]{1,1,2};
         int length = _duplicatesRemover.process(array);
