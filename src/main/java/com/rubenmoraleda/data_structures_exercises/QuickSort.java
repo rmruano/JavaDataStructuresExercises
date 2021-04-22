@@ -14,9 +14,7 @@ public class QuickSort {
     }
 
     protected static int[] sort(int[] array, SORT_TYPE sortType) {
-        if (array.length>1) {
-            sortPartition(array, 0, array.length-1, 0, sortType);
-        }
+        if (array.length>1) sortPartition(array, 0, array.length-1, Integer.valueOf(0), sortType);
         return array;
     }
 
